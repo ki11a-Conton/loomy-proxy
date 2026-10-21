@@ -1,4 +1,4 @@
-# loomy-proxy v2.2.0
+# loomy-proxy v2.2.1
 
 Loomy（龙虾）桌面客户端的**本地网关反代**，把客户端授权转成 OpenAI 兼容接口，供本机工具（如 DeepSeek Harness）调用。
 
@@ -8,7 +8,7 @@ Loomy（龙虾）桌面客户端的**本地网关反代**，把客户端授权�
 
 | 文件 | 大小 | SHA256 |
 | --- | --- | --- |
-| [`dist-zip/loomy-proxy-v2.2.0.zip`](dist-zip/loomy-proxy-v2.2.0.zip) | 82,201 B | `F1AD10C32CA476975723C7C7D8048E35C20F88D56BABB672A190F3736946AC78` |
+| [`dist-zip/loomy-proxy-v2.2.1.zip`](dist-zip/loomy-proxy-v2.2.1.zip) | 85,155 B | `F5266414212501607E58F4CDE84B7863D93AAD859A256B91BE9A2874E5990279` |
 
 ## 快速开始
 
@@ -21,6 +21,7 @@ Loomy（龙虾）桌面客户端的**本地网关反代**，把客户端授权�
 
 ## 版本
 
+- **v2.2.1**：新增**出站提示词品牌过滤**——只清洗发给 Loomy 的 `system` / `developer` 文本，把 `DeepSeek Harness` 替换为 `Loomy`；DSH 本地提示词与 `user` / `assistant` / `tool` 内容一律不动。`/health` 报 `2.2.1`。
 - **v2.2.0**：新增**客户端身份层**——按 Loomy 0.9.39 源码复刻 `traceparent`、`ChatId` / `MsgId` / `TurnId`、`X-Loomy-Request-Purpose`、`InvokeOrigin`、`loomy-version`、真实 Chrome UA 与稳定设备指纹；反代与签到脚本统一走 `lib/loomy-client.mjs`（零新增依赖），新增 `/fingerprint` 排障端点。`/health` 报 `2.2.0`。
 - **v2.1.2**：启动器重做——服务改为后台 detached 进程 + 文件日志（关窗口不再杀进程），新增 `stop-all.cmd`。
 - **v2.1.1**：新增 `start-all.cmd` 一键启动（反代 + 网页登录一起拉起，按 `/health` 探测幂等）。
