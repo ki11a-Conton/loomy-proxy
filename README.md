@@ -8,7 +8,7 @@ Loomy（龙虾）桌面客户端的**本地网关反代**，把客户端授权�
 
 | 文件 | 大小 | SHA256 |
 | --- | --- | --- |
-| [`dist-zip/loomy-proxy-v2.2.0.zip`](dist-zip/loomy-proxy-v2.2.0.zip) | 82,023 B | `5BCF070DE608A686DA27C91FF1F18816FDF7AFA1DFB35C9C2D26D37FD2055822` |
+| [`dist-zip/loomy-proxy-v2.2.0.zip`](dist-zip/loomy-proxy-v2.2.0.zip) | 82,201 B | `F1AD10C32CA476975723C7C7D8048E35C20F88D56BABB672A190F3736946AC78` |
 
 ## 快速开始
 
